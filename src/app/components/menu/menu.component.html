@@ -1,0 +1,13 @@
+<header class="principal w-100 position-sticky" id="headerHome">
+    <div class="menu d-flex justify-content-between align-items-center">
+        <nav class="menu-principal">
+            <ul class="d-flex align-items-center">
+                <li class="menu-item item-{{ i }}" *ngFor="let item of items; index as i;">
+                    <a routerLink="{{ item.routerLink }}">
+                        {{ item.label }}
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>

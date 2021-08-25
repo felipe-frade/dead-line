@@ -1,0 +1,35 @@
+:host ::ng-deep header {
+    top: 0;
+    z-index: 10;
+}
+:host ::ng-deep header .redes {
+    height: 43px;
+    padding-right: 40px;
+    background-color: #5F0404;
+}
+:host ::ng-deep header .menu {
+    height: 100px;
+    padding: 0px 100px;
+    background-color: #FFFFFF;
+}
+:host ::ng-deep header .menu ul {
+    padding: 0px 25px;
+    margin: 0px;
+}
+:host ::ng-deep header .menu ul li {
+    padding: 0px 25px;
+}
+:host ::ng-deep header a {
+    color: #5F0404;
+}
+:host ::ng-deep header .menu-mobile {
+    display: none;
+}
+@media only screen and (max-width: 1024px) {
+    :host ::ng-deep header .menu-mobile {
+        display: inline-block !important;
+    }
+    :host ::ng-deep header .menu ul li.menu-item {
+        display: none !important;
+    }
+}

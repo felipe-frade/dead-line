@@ -1,0 +1,22 @@
+export interface Country {
+  name: string
+  code: string
+  capital: string
+  region: string
+  demonym?: string
+  currency: Currency
+  language: Language
+  flag: string
+}
+
+export interface Currency {
+  code: string
+  name: string
+  symbol: string
+}
+
+export interface Language {
+  code: string
+  name: string
+  nativeName?: string
+}
